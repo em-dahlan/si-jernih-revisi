@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Jernih - Jasa Bor Sumur & Saluran Mampet Surabaya Sidoarjo</title>
+    <meta name="description" content="Jasa bor sumur manual, kuras tandon, dan atasi saluran mampet di Surabaya & Sidoarjo. Pengerjaan 1 hari selesai, harga transparan, bergaransi!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            800: '#1e40af',
+                            900: '#0f295e', // Dark blue dari logo
+                        },
+                        wa: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 41, 94, 0.85), rgba(15, 41, 94, 0.95)), url('https://images.unsplash.com/photo-1527015509935-7d526e0b75df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Floating WA animation */
+        @keyframes pulse-wa {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .btn-wa-float {
+            animation: pulse-wa 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="max-w-md mx-auto md:max-w-5xl px-4 py-3 flex justify-between items-center">
+            <!-- Logo Custom SVG (Recreated based on upload) -->
+            <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <svg width="32" height="40" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 0C50 0 15 35 15 65C15 84.33 30.67 100 50 100C69.33 100 85 84.33 85 65C85 35 50 0 50 0ZM50 85C38.95 85 30 76.05 30 65C30 50 50 25 50 25C50 25 70 50 70 65C70 76.05 61.05 85 50 85Z" fill="#0f295e"/>
+                    <path d="M40 95L35 125L50 135L65 115L60 95H40Z" fill="#0f295e"/>
+                    <path d="M42 98L40 120L48 126V98H42Z" fill="#9ca3af"/>
+                </svg>
+                <div class="flex flex-col">
+                    <span class="font-bold text-xl text-brand-900 leading-none tracking-tight">SI JERNIH</span>
+                    <span class="text-[9px] text-gray-500 font-medium tracking-widest uppercase">Bor Sumur Profesional</span>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20butuh%20info%20tentang%20jasa%20bor/saluran%20air." target="_blank" class="bg-wa text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-1.5 shadow-lg shadow-green-200">
+                <i class="ph-fill ph-whatsapp text-lg"></i>
+                <span class="hidden md:inline">Hubungi Kami</span>
+                <span class="md:hidden">Chat WA</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg pt-28 pb-20 px-4">
+        <div class="max-w-md mx-auto md:max-w-3xl text-center text-white">
+            <div class="inline-block bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+                Spesialis Area Surabaya & Sidoarjo
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                Air Sumur Kering, Bau, Atau Saluran Rumah Mampet?
+            </h1>
+            <p class="text-brand-100 text-base md:text-lg mb-8 font-light leading-relaxed">
+                Tak perlu pusing! Kami hadir membawa solusi pasti. Pengerjaan cepat <strong class="text-white">1 hari selesai</strong>, harga transparan, dan bergaransi air mengalir deras.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20mau%20konsultasi%20masalah%20air/sumur%20di%20rumah%20saya." target="_blank" class="bg-wa hover:bg-green-600 text-white font-bold py-3.5 px-8 rounded-full text-center flex justify-center items-center gap-2 transition-all shadow-lg transform hover:-translate-y-1">
+                    <i class="ph-fill ph-whatsapp text-2xl"></i>
+                    Konsultasi Gratis via WA
+                </a>
+                <a href="#layanan" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold py-3.5 px-8 rounded-full text-center transition-all">
+                    Lihat Daftar Harga
+                </a>
+            </div>
+            <!-- Stats -->
+            <div class="flex justify-center gap-6 mt-12 pt-8 border-t border-white/20">
+                <div class="flex flex-col"><span class="text-2xl font-extrabold text-yellow-400">354+</span><span class="text-xs">Pelanggan Puas</span></div>
+                <div class="w-px h-10 bg-white/20"></div>
+                <div class="flex flex-col"><span class="text-2xl font-extrabold text-yellow-400">10+</span><span class="text-xs">Tahun Pengalaman</span></div>
+                <div class="w-px h-10 bg-white/20"></div>
+                <div class="flex flex-col"><span class="text-2xl font-extrabold text-yellow-400">4</span><span class="text-xs">Layanan Utama</span></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Section (Agitation) -->
+    <section class="py-12 bg-white px-4">
+        <div class="max-w-md mx-auto md:max-w-5xl">
+            <h2 class="text-2xl font-bold text-center text-brand-900 mb-8">Sering Mengalami Masalah Ini?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <div class="w-14 h-14 mx-auto bg-red-100 text-red-500 rounded-full flex items-center justify-center mb-4">
+                        <i class="ph ph-warning-circle text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Air Kecil / PDAM Mati</h3>
+                    <p class="text-gray-600 text-sm">Kebutuhan air rumah tangga atau bisnis terhambat karena debit air sumur lama mengecil atau PDAM sering bermasalah.</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <div class="w-14 h-14 mx-auto bg-red-100 text-red-500 rounded-full flex items-center justify-center mb-4">
+                        <i class="ph ph-drop-slash text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Air Keruh & Bau</h3>
+                    <p class="text-gray-600 text-sm">Air sumur tiba-teman kotor, berbau, atau tandon air Anda sudah dipenuhi lumut dan endapan lumpur yang tidak sehat.</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <div class="w-14 h-14 mx-auto bg-red-100 text-red-500 rounded-full flex items-center justify-center mb-4">
+                        <i class="ph ph-toilet text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Saluran / WC Mampet</h3>
+                    <p class="text-gray-600 text-sm">Wastafel cucian piring, kamar mandi, atau WC mampet yang bikin aktivitas rumah tangga jadi sangat menjijikan dan repot.</p>
+                </div>
+            </div>
+            
+            <p class="text-center mt-8 font-semibold text-lg text-brand-900">
+                Tenang! <span class="text-brand-500">Si Jernih</span> Punya Semua Solusinya.
+            </p>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="py-12 bg-brand-50 px-4">
+        <div class="max-w-md mx-auto md:max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-brand-900 mb-10">Mengapa Warga Sidoarjo & Surabaya Memilih Kami?</h2>
+            
+            <div class="space-y-6">
+                <!-- Point 1 -->
+                <div class="flex gap-4 items-start bg-white p-5 rounded-2xl shadow-sm border border-brand-100">
+                    <div class="flex-shrink-0 bg-brand-100 p-3 rounded-xl text-brand-800">
+                        <i class="ph-fill ph-map-pin-line text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-900">Paham Karakter Tanah Lokal & Pesisir</h3>
+                        <p class="text-gray-600 text-sm mt-1">Kami tahu betul struktur tanah Surabaya-Sidoarjo. Di area pesisir, kami atur kedalaman ideal (8-10 meter) agar sumur Anda terhindar dari air payau atau asin. Tidak asal bor!</p>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="flex gap-4 items-start bg-white p-5 rounded-2xl shadow-sm border border-brand-100">
+                    <div class="flex-shrink-0 bg-brand-100 p-3 rounded-xl text-brand-800">
+                        <i class="ph-fill ph-lightning text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-900">Teknik "Tembak Alkon" Tanpa Bongkar</h3>
+                        <p class="text-gray-600 text-sm mt-1">Untuk bor sumur maupun saluran mampet, kami menggunakan mesin diesel alkon bertekanan tinggi. Kerja jadi sangat cepat (rata-rata 1 hari selesai) dan bersih.</p>
+                    </div>
+                </div>
+                <!-- Point 3 -->
+                <div class="flex gap-4 items-start bg-white p-5 rounded-2xl shadow-sm border border-brand-100">
+                    <div class="flex-shrink-0 bg-brand-100 p-3 rounded-xl text-brand-800">
+                        <i class="ph-fill ph-receipt text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-900">Tim Ahli Berpengalaman</h3>
+                        <p class="text-gray-600 text-sm mt-1">Tim kami terdiri atas teknisi dan tukang yang ahli dan berpengalaman lebih dari 10 tahun untuk memberika solusi terbaik dan menghindari resiko kerugian pada pengerjaan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="layanan" class="py-16 bg-white px-4">
+        <div class="max-w-md mx-auto md:max-w-5xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-brand-900 mb-3">Layanan & Harga Transparan</h2>
+                <p class="text-gray-600">Pilih layanan sesuai kebutuhan Anda. Fleksibel, jujur, dan bergaransi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+                        BEST SELLER
+                    </div>
+                    <div class="bg-brand-900 h-2"></div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-brand-900 mb-1">Bor Sumur Manual</h3>
+                        <p class="text-sm text-gray-500 mb-4">Solusi cepat mendapatkan air tanah (Kedalaman 8-15m).</p>
+                        
+                        <div class="bg-blue-50 p-3 rounded-lg mb-4">
+                            <span class="block text-xs text-brand-800 font-semibold mb-1">PAKET TERIMA BERSIH (BORONGAN)</span>
+                            <div class="flex items-end gap-1">
+                                <span class="text-sm">Mulai dari</span>
+                                <span class="text-2xl font-bold text-brand-900">Rp2 Jt</span>
+                                <span class="text-sm text-gray-500"> - 2.5 Jt</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">Sudah termasuk bahan pipa. Estimasi 1 hari selesai hingga air keluar!</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <span class="block text-xs text-gray-500 font-semibold mb-1">ATAU PAKET JASA SAJA</span>
+                            <span class="text-lg font-bold text-gray-800">Rp 150.000 <span class="text-sm font-normal">/ meter</span></span>
+                            <p class="text-xs text-gray-500">(Belum termasuk bahan material pipa, dll)</p>
+                        </div>
+                        
+                        <ul class="text-sm space-y-2 text-gray-700 mb-6">
+                            <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-green-500 mt-0.5"></i> Disedot bersih pakai diesel alkon</li>
+                            <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-green-500 mt-0.5"></i> Penyesuaian kedalaman pesisir</li>
+                            <li class="flex items-start gap-2"><i class="ph-fill ph-info text-blue-500 mt-0.5"></i> <span class="text-xs italic">*Hanya jasa pengeluaran air tanah, tidak termasuk pasang mesin pompa Sanyo.</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50 mt-auto">
+                        <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20mau%20tanya%20Paket%20Bor%20Sumur." class="block w-full text-center bg-brand-900 hover:bg-brand-800 text-white font-semibold py-2.5 rounded-xl transition">
+                            Tanya Detail Bor Sumur
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="bg-brand-500 h-2"></div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-brand-900 mb-1">Perawatan Air Bersih</h3>
+                        <p class="text-sm text-gray-500 mb-4">Kembalikan kejernihan air Anda.</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="border-b border-gray-100 pb-3">
+                                <h4 class="font-semibold text-gray-800">Kuras Sumur Keruh/Butek</h4>
+                                <p class="text-xs text-gray-500 mb-1">Proses 2 jam - 1 hari selesai.</p>
+                                
+                                <span class="text-lg font-bold text-brand-900">Rp 250.000</span>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Cuci Tandon Air (Toren)</h4>
+                                <p class="text-xs text-gray-500 mb-1">Bersihkan lumut & lumpur (Ukuran ±1000L).</p>
+                                <span class="text-lg font-bold text-brand-900">Rp 150rb - 200rb</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 mt-auto">
+                        <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20mau%20pesan%20jasa%20Kuras%20Sumur/Tandon." class="block w-full text-center bg-white border-2 border-brand-900 text-brand-900 font-semibold py-2 rounded-xl transition hover:bg-brand-50">
+                            Pesan Layanan Kuras
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="bg-brand-500 h-2"></div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-brand-900 mb-1">Instalasi & Perbaikan</h3>
+                        <p class="text-sm text-gray-500 mb-4">Solusi cepat tanpa bongkar besar.</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="border-b border-gray-100 pb-3">
+                                <div class="flex items-center gap-1 mb-1">
+                                    <h4 class="font-semibold text-gray-800">Saluran Mampet</h4>
+                                    <span class="bg-red-100 text-red-600 text-[10px] px-2 py-0.5 rounded-full font-bold">PLONG!</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-1">WC / Wastafel. Ditembak pakai mesin Alkon.</p>
+                                <span class="text-lg font-bold text-brand-900">Rp 350.000 <span class="text-sm font-normal text-gray-500">Flat</span></span>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Jasa Instalasi Pipa Air</h4>
+                                <p class="text-xs text-gray-500 mb-1">Dari tandon ke: 1 toilet, 1 wastafel, 1 keran. (2-3 jam). *Hanya jasa.</p>
+                                <span class="text-lg font-bold text-brand-900">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 mt-auto">
+                        <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20butuh%20bantuan%20untuk%20saluran%20mampet/instalasi%20pipa." class="block w-full text-center bg-white border-2 border-brand-900 text-brand-900 font-semibold py-2 rounded-xl transition hover:bg-brand-50">
+                            Atasi Saluran Mampet
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Optional: Gali Sumur Tradisional -->
+            <div class="mt-6 bg-yellow-50 border border-yellow-200 rounded-xl p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <i class="ph-fill ph-info text-2xl text-yellow-600"></i>
+                    <div>
+                        <h4 class="font-bold text-yellow-900 text-sm">Juga Melayani: Gali Sumur Timba Tradisional</h4>
+                        <p class="text-xs text-yellow-800 mt-1">Diameter 60-80cm. Biaya mulai Rp350rb/meter. Cocok untuk area tertentu.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6285869462220?text=Halo,%20mau%20tanya%20tentang%20Gali%20Sumur%20Timba" class="text-sm font-bold text-brand-800 underline whitespace-nowrap">Tanya Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-12 bg-brand-900 text-white px-4">
+        <div class="max-w-md mx-auto md:max-w-4xl text-center">
+            <h2 class="text-2xl font-bold mb-8">Cara Kerja Mudah & Cepat</h2>
+            
+            <div class="flex flex-col md:flex-row gap-6 relative">
+                <!-- Line connector for desktop -->
+                <div class="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 bg-brand-800 -z-0"></div>
+
+                <div class="flex-1 relative z-10 flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-brand-500 border-4 border-brand-900 flex items-center justify-center font-bold text-xl mb-3 shadow-lg">1</div>
+                    <h3 class="font-bold mb-1">Konsultasi WA</h3>
+                    <p class="text-sm text-brand-100 font-light">Ceritakan masalah/lokasi Anda, kami berikan estimasi transparan.</p>
+                </div>
+                
+                <div class="flex-1 relative z-10 flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-brand-500 border-4 border-brand-900 flex items-center justify-center font-bold text-xl mb-3 shadow-lg">2</div>
+                    <h3 class="font-bold mb-1">Pengerjaan</h3>
+                    <p class="text-sm text-brand-100 font-light">Tim datang dengan alat lengkap. Mayoritas selesai 1 hari!</p>
+                </div>
+
+                <div class="flex-1 relative z-10 flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-wa border-4 border-brand-900 flex items-center justify-center font-bold text-xl mb-3 shadow-lg"><i class="ph-bold ph-check"></i></div>
+                    <h3 class="font-bold mb-1">Air Plong & Jernih</h3>
+                    <p class="text-sm text-brand-100 font-light">Air sumur keluar atau saluran lancar, baru Anda bayar lunas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50 px-4">
+        <div class="max-w-md mx-auto md:max-w-2xl">
+            <h2 class="text-2xl font-bold text-center text-brand-900 mb-8">Pertanyaan Sering Ditanya (FAQ)</h2>
+            
+            <div class="space-y-4">
+                <details class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 cursor-pointer group">
+                    <summary class="font-semibold text-gray-800 list-none flex justify-between items-center">
+                        Apakah pasti dapat air jernih?
+                        <i class="ph-bold ph-caret-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-gray-600 mt-3 pt-3 border-t border-gray-50 leading-relaxed">
+                        Kami berusaha mencari titik mata air terbaik. Untuk area pesisir, kedalaman kami sesuaikan (maks 10m) agar air tidak asin. Kami menggunakan diesel alkon di tahap akhir agar kotoran sisa bor terbuang maksimal.
+                    </p>
+                </details>
+                
+                <details class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 cursor-pointer group">
+                    <summary class="font-semibold text-gray-800 list-none flex justify-between items-center">
+                        Borongan 2 - 2,5 Juta sudah termasuk mesin pompa?
+                        <i class="ph-bold ph-caret-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-gray-600 mt-3 pt-3 border-t border-gray-50 leading-relaxed">
+                        Harga borongan tersebut sudah mencakup **jasa bor sampai air keluar + bahan pipa paralon dll**. Namun, **TIDAK termasuk** mesin pompa air (Sanyo) dan jasa pemasangannya. Mesin pompa disediakan oleh klien atau bisa kami bantu belikan secara terpisah.
+                    </p>
+                </details>
+
+                <details class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 cursor-pointer group">
+                    <summary class="font-semibold text-gray-800 list-none flex justify-between items-center">
+                        Berapa lama proses pengerjaannya?
+                        <i class="ph-bold ph-caret-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-sm text-gray-600 mt-3 pt-3 border-t border-gray-50 leading-relaxed">
+                        Sangat cepat! Untuk bor manual, kuras sumur, saluran mampet, maupun instalasi pipa standar, target penyelesaian kami adalah **1 Hari Kerja**.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-md mx-auto md:max-w-4xl bg-brand-50 rounded-3xl p-8 md:p-12 text-center border border-brand-100 relative overflow-hidden">
+            <!-- decorative circles -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand-200 rounded-full opacity-50 blur-xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-300 rounded-full opacity-50 blur-xl"></div>
+            
+            <div class="relative z-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-900 mb-4">Jangan Tunggu Sampai Masalah Air Makin Parah!</h2>
+                <p class="text-gray-600 mb-8 max-w-lg mx-auto">Konsultasikan masalah Anda sekarang. Tim Si Jernih siap meluncur ke lokasi Anda di seluruh Surabaya & Sidoarjo hari ini juga.</p>
+                
+                <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20tolong%20bantu%20masalah%20air/sumur%20di%20tempat%20saya." target="_blank" class="inline-flex justify-center items-center gap-2 bg-wa hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full shadow-xl shadow-green-200 transform transition hover:scale-105 text-lg w-full md:w-auto">
+                    <i class="ph-fill ph-whatsapp text-3xl"></i>
+                    Chat WA Sekarang
+                </a>
+                <p class="mt-4 text-xs text-gray-500 font-medium">*Respon Cepat. Klik langsung terhubung ke WhatsApp Admin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm px-4">
+        <div class="max-w-md mx-auto flex flex-col items-center gap-2">
+             <div class="flex items-center gap-2 mb-2 opacity-50 grayscale">
+                <svg width="24" height="30" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 0C50 0 15 35 15 65C15 84.33 30.67 100 50 100C69.33 100 85 84.33 85 65C85 35 50 0 50 0ZM50 85C38.95 85 30 76.05 30 65C30 50 50 25 50 25C50 25 70 50 70 65C70 76.05 61.05 85 50 85Z" fill="#ffffff"/>
+                    <path d="M40 95L35 125L50 135L65 115L60 95H40Z" fill="#ffffff"/>
+                    <path d="M42 98L40 120L48 126V98H42Z" fill="#9ca3af"/>
+                </svg>
+                <span class="font-bold text-lg text-white">SI JERNIH</span>
+            </div>
+            <p>&copy; 2024 Si Jernih - Jasa Bor Sumur & Saluran Surabaya Sidoarjo.</p>
+            <p>Melayani dengan Cepat, Tepat, dan Transparan.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WA Button (Mobile Sticky) -->
+    <a href="https://wa.me/6285869462220?text=Halo%20Si%20Jernih,%20saya%20butuh%20jasa%20bor%20sumur/saluran." target="_blank" class="btn-wa-float fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-wa text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center hover:bg-green-600 transition-colors">
+        <i class="ph-fill ph-whatsapp text-4xl"></i>
+    </a>
+
+</body>
+</html>
